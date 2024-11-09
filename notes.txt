@@ -1,0 +1,10 @@
+~~Mobile Layout~~
+
+- Navigation Bar:
+-- For now, keep it as a vertical list of indivdual buttons.
+-- Eventually turn into a hamburger menu (three lines icon)
+
+~~Desktop / Tablet Layout~~
+
+- Navigation Bar:
+-- Horizontal list of links
