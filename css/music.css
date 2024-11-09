@@ -1,0 +1,75 @@
+/* 
+#21006C
+#57006C
+#00156C
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, div, img, ul {margin:0;padding:0; border:0;}
+
+#tab-desk, .tab-desk {display:none;}
+
+img {max-width: 100%;
+    display: block;}
+
+/*MOBILE STYLE RULES*/
+
+header {background-color: #000000;
+    position: sticky;
+    top:0;
+img{margin: auto;
+    padding: 1em;}}
+
+nav {
+    background-color: #21006C;
+    padding: 1%;
+    margin-bottom: 1%;
+
+    ul{text-align: center;}
+
+    li {font-size: 1.5em;
+    border-top: 1px solid #ffffff;
+    padding: 0.5em;}
+
+    a {text-decoration: none;
+        color: #ffffff;}
+
+    li:first-child {border-top: none;}
+}
+
+body{
+    background-color: #dcf8ff;
+}
+
+main{
+    background-color: #00156C;
+    color: #ffffff;
+    margin: 2vh 1vw 0 1vw;
+    padding: 1em 2em 1em 2em;
+    font-size: 1.25em;
+    border-radius: 8px;
+    h1 {color: #FF9BFE;}
+}
+
+footer {background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 0.5%;
+    margin-top: 5%;}
+
+/*TABLET STYLE RULES*/
+@media screen and (min-width: 630px), print {
+    #mobile, .mobile {display:none;}
+    #tab-desk, .tab-desk {display:block;}
+}
+
+/*DESKTOP STYLE RULES*/
+@media screen and (min-width: 1015px), print{
+
+}
+
+/*TOO LARGE*/
+@media screen and (min-width: 1921px) {
+    #container {width: 1920px;
+        margin: 0 auto;}
+}
