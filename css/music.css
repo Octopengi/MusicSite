@@ -14,22 +14,25 @@ img {max-width: 100%;
 
 /*MOBILE STYLE RULES*/
 
-header {background-color: #000000;
-    position: sticky;
+header {background-color: #21006C;
     top:0;
-img{margin: auto;
-    padding: 1em;}}
+    img{margin: auto;
+    padding: 1em;
+    width: 35%;
+    height: 35%;}
+    border-bottom: 4px solid #00082c;}
 
 nav {
-    background-color: #21006C;
+    background-color: #00082c;
     padding: 1%;
     margin-bottom: 1%;
 
-    ul{text-align: center;}
+    ul{text-align: center;
+        list-style-type: none;}
 
     li {font-size: 1.5em;
     border-top: 1px solid #ffffff;
-    padding: 0.5em;}
+    padding: 0.35em;}
 
     a {text-decoration: none;
         color: #ffffff;}
@@ -38,20 +41,22 @@ nav {
 }
 
 body{
-    background-color: #dcf8ff;
+    background-color: #00156C;
 }
 
 main{
-    background-color: #00156C;
-    color: #ffffff;
-    margin: 2vh 1vw 0 1vw;
-    padding: 1em 2em 1em 2em;
+    background-color: #f6fdff;
+    color: #190021;
+    margin: 2vh 2vw 0 2vw;
+    padding: 0.5em 2em 1em 2em;
     font-size: 1.25em;
     border-radius: 8px;
-    h1 {color: #FF9BFE;}
+    h1 {color: #3e003d;
+        text-align: center;
+        font-size: 2.5em;}
 }
 
-footer {background-color: #000000;
+footer {background-color: #00082c;
     color: #ffffff;
     text-align: center;
     padding: 0.5%;
