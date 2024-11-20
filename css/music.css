@@ -20,10 +20,11 @@ header {background-color: #21006C;
     padding: 1em;
     width: 35%;
     height: 35%;}
-    border-bottom: 4px solid #00082c;}
+    /*border-bottom: 4px solid #130024;*/
+}
 
 nav {
-    background-color: #00082c;
+    background-color: #130024;
     padding: 1%;
     margin-bottom: 1%;
 
@@ -54,9 +55,13 @@ main{
     h1 {color: #3e003d;
         text-align: center;
         font-size: 2.5em;}
+    ul {li {
+        padding-bottom: 1em;
+    }
+    }
 }
 
-footer {background-color: #00082c;
+footer {background-color: #130024;
     color: #ffffff;
     text-align: center;
     padding: 0.5%;
