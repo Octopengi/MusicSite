@@ -7,7 +7,9 @@
 /*CSS Reset*/
 body, header, nav, main, footer, h1, div, img, ul {margin:0;padding:0; border:0;}
 
-#tab-desk, .tab-desk {display:none;}
+#tab-desk, .tab-desk, #nav-links {display:none;}
+
+* {box-sizing: border-box;}
 
 img {max-width: 100%;
     display: block;}
@@ -23,42 +25,42 @@ header {background-color: #21006C;
     /*border-bottom: 4px solid #130024;*/
 }
 
-nav {
-    background-color: #130024;
-    padding: 1%;
-    margin-bottom: 1%;
-
-    ul{text-align: center;
-        list-style-type: none;}
-
-    li {font-size: 1.5em;
-    border-top: 1px solid #ffffff;
-    padding: 0.35em;}
-
-    a {text-decoration: none;
-        color: #ffffff;}
-
-    li:first-child {border-top: none;}
+.mob-nav a {background-color: #21006C;
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
 }
 
+.mob-nav a.nav-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
 body{
-    background-color: #00156C;
+    background-color: #21006C;
 }
 
 main{
     background-color: #f6fdff;
     color: #190021;
     margin: 2vh 2vw 0 2vw;
-    padding: 0.5em 2em 1em 2em;
+    padding: 0.1em 2em 1em 2em;
     font-size: 1.25em;
     border-radius: 8px;
-    h1 {color: #3e003d;
-        text-align: center;
-        font-size: 2.5em;}
+    clear: none;
+    h1, h2 {color: #3e003d;
+        text-align: center;}
+    h1 {font-size: 2.5em;}
+    h2 {font-size: 1.7em;}
     ul {li {
         padding-bottom: 1em;
-    }
-    }
+    }}
 }
 
 footer {background-color: #130024;
@@ -69,13 +71,56 @@ footer {background-color: #130024;
 
 /*TABLET STYLE RULES*/
 @media screen and (min-width: 630px), print {
-    #mobile, .mobile {display:none;}
+    #mobile, .mobile, .mob-nav {display:none;}
     #tab-desk, .tab-desk {display:block;}
+
+    nav {background-color: #130024;
+        padding: 1%;
+        margin-bottom: 1%;
+
+        ul{text-align: center;
+            list-style-type: none;}
+
+        li {font-size: 1.5em;
+        border-right: 1px solid #ffffff;
+        padding: 0.35em;
+        display: inline-block;}
+
+        a {text-decoration: none;
+            color: #ffffff;}
+    }
+
+    body{
+        background-color: #00156C;
+    }
+
+    main {clear: none;}
+
 }
 
 /*DESKTOP STYLE RULES*/
 @media screen and (min-width: 1015px), print{
+    header {width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
 
+    nav {background-color: #21006C;
+        float: right;
+        width: 70%;
+        ul {text-align: right;
+            background-color: #21006C;}
+    }
+
+    body {background-color: #21006C;}
+
+    main {clear: both;
+        margin: 0 0 0 0;
+        border: none;
+        border-radius: 0;
+    }
+
+    footer {margin-top: 0;}
 }
 
 /*TOO LARGE*/
