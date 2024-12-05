@@ -7,24 +7,34 @@
   </head>
   <body>
     <div id="container">
-      <header>
-        <a href="index.html">
-          <img src="images/temp_logo.png" alt="The Harmony Foundation Logo" />
-        </a>
+      <nav class="mob-nav">
+          <div id="nav-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About&nbsp;Us</a>
+              <a href="programs.html">Programs</a>
+              <a href="don_fund.html">Donations&nbsp;&&nbsp;Fundraisers</a>
+              <a href="contact.html">Contact&nbsp;Us</a>
+          </div>
+          <a class="nav-icon" onclick="hamburger()"><div>&#9776;</div></a>
+      </nav>
+      <header id="hf-logo">
+          <a href="index.html">
+              <img src="images/temp_logo.png">
+          </a>
       </header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="programs.html" class="active">Programs</a></li>
-          <li><a href="don_fund.html">Donations/Fundraiser</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+      <nav class="tab-desk">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About&nbsp;Us</a></li>
+              <li><a href="programs.html">Programs</a></li>
+              <li><a href="don_fund.html">Donations</a></li>
+              <li><a href="contact.html">Contact&nbsp;Us</a></li>
+          </ul>
       </nav>
       <!--MAIN SECTION-->
-      <main>
+      <main class="main2">
         <h1>Our Programs</h1>
-        <section class="program">
+        <section>
           <h2> Music Education for Youth</h2>
           <img src="images/music class.webp" alt="Music Education for Youth" />
           <p>
@@ -35,7 +45,7 @@
             program aims to empower young people from underserved communities.
           </p>
         </section>
-        <section class="program">
+        <section>
           <h2> Community Choir</h2>
           <img
             src="images/7-york-community-choir-festival.jpg"
@@ -50,7 +60,7 @@
             harmonize with fellow choir members.
           </p>
         </section>
-        <section class="program">
+        <section>
           <h2> Healing Through Music</h2>
           <img src="images/healing.png" alt="Healing Through Music" />
           <p>
@@ -72,5 +82,6 @@
         <p><a href="tel:+18667223338">(866) 722-3338</a></p>
       </footer>
     </div>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
