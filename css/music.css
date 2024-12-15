@@ -187,3 +187,27 @@ footer {background-color: #130024;
 #form h2 {
   text-align: center;
 }
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-grid label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-grid input,
+.form-grid textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-grid textarea {
+  resize: vertical;
+}
