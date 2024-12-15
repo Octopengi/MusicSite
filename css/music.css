@@ -150,3 +150,30 @@ footer {background-color: #130024;
     #container {width: 1920px;
         margin: 0 auto;}
 }
+
+.map-hours-container {
+  display: flex;
+  gap: 20px; /* Adds space between the map and the hours */
+  align-items: flex-start; /* Aligns the items at the top */
+}
+
+.map iframe {
+  border: none; /* Optional: Removes border around the iframe */
+}
+
+.hours {
+  max-width: 300px; /* Limits the width of the hours section */
+}
+
+.hours h2 {
+  margin-bottom: 10px;
+}
+
+.hours ul {
+  list-style: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+}
+
+.hours li {
+  margin-bottom: 5px; /* Adds space between each list item */
+}
