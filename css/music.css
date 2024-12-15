@@ -177,3 +177,13 @@ footer {background-color: #130024;
 .hours li {
   margin-bottom: 5px; /* Adds space between each list item */
 }
+
+#form {
+  margin-top: block;
+  background-color: none;
+  padding: 2%;
+}
+
+#form h2 {
+  text-align: center;
+}
