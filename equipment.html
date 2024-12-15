@@ -36,8 +36,95 @@
             <!--MAIN SECTION-->
             <main>
                 <h1>Equipment Donation Forms</h1>
-                <h2 class="mobile">Instrument Donations</h2>
-                <h2 class="tab-desk">If you are donating a musical instrument, please fill out this form</h2>
+                <section>
+                    <h2>Instrument Donations</h2>
+                    <p class="extra">When your form is submitted, it will be reviewed and a member from the Harmony Foundation will email you within 5 business days.</p>
+                    <form class="grid2">
+                        <fieldset>
+                            <legend>Instrument Info</legend>
+                            <label for="instrument">*Instrument Type</label><br>
+                            <select name="instrument" id="instrument">
+                                <option value="bass">Bass</option>
+                                <option value="cello">Cello</option>
+                                <option value="clarinet">Clarinet</option>
+                                <option value="flute">Flute</option>
+                                <option value="piano">Piano</option>
+                                <option value="saxophone">Saxophone</option>
+                                <option value="trombone">Trombone</option>
+                                <option value="trumpet">Trumpet</option>
+                                <option value="viola">Viola</option>
+                                <option value="violin">Violin</option>
+                                <option value="other">Other (Please specifiy in comments)</option>
+                            </select><br>
+                            <label for="condition">Condition</label><br>
+                            <select name="condition" id="condition">
+                                <option value="n">New</option>
+                                <option value="vg">Very Good</option>
+                                <option value="g">Good</option>
+                                <option value="o">Okay</option>
+                                <option value="p">Poor</option>
+                                <option value="vp">Very Poor</option>
+                            </select><br>
+
+                            <label for="owners">Past Owners</label><br>
+                            <input type="number" id="owners" name="owners" min="0" max="5" value="0"><br>
+
+                            <label for="comment">Additional Comments</label><br>
+                            <textarea id="comment" name="comment" rows="5" cols="35"></textarea>
+
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Info</legend>
+                            <label for="f-name">First Name</label>
+                            <input type="text" name="f-name" id="f-name" required><br>
+
+                            <label for="l-name">Last Name</label>
+                            <input type="text" name="l-name" id="l-name" required><br>
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required><br>
+
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" name="phone" id="phone"><br>
+                        </fieldset>
+                        <p class="extra">*If you cannot find the specific instrument you are trying to donate, please email <a href="mailto:TheHarmony@fundation.net">TheHarmony@fundation.net</a></p>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </section>
+                <section>
+                    <h2>Other Equipment Donations</h2>
+                    <p class="extra">When your form is submitted, it will be reviewed and a member from the Harmony Foundation will email you within 5 business days.</p>
+                    <form class="grid2">
+                        <fieldset>
+                            <legend>Equipment Info</legend>
+                            <label for="equipment">*Equipment Type</label><br>
+                            <select name="equipment" id="equipment">
+                                <option value="cello_as">Cello Anti-Slip Strap</option>
+                                <option value="c_reed">Clarinet Reeds</option>
+                                <option value="stand">Music Stand</option>
+                            </select><br>
+
+                            <label for="quantity">Quantity</label><br>
+                            <input type="number" id="quantity" name="quantity" min="1" max="50" value="1"><br>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Contact Info</legend>
+                            <label for="f-name">First Name</label>
+                            <input type="text" name="f-name" id="f-name" required><br>
+
+                            <label for="l-name">Last Name</label>
+                            <input type="text" name="l-name" id="l-name" required><br>
+
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required><br>
+
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" name="phone" id="phone"><br>
+                        </fieldset>
+                        <p class="extra">*If you cannot find the specific item you are trying to donate, please email <a href="mailto:TheHarmony@fundation.net">TheHarmony@fundation.net</a></p>
+                        <button type="submit" class="submit">Submit</button>
+                    </form>
+                </section>
             </main>
             <footer>
                 <p>&copy; Copyright 2024. All Rights Reserved.</p>
